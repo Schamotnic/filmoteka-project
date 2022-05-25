@@ -1,0 +1,67 @@
+.registerModal__closebtn,
+.signInModal__closebtn {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  background-color: $primary-background-color;
+  cursor: pointer;
+  padding: 0;
+
+  &:focus,
+  &:hover {
+    fill: $primary-accent-color;
+  }
+}
+
+.register__form,
+.signIn__form {
+  max-width: 320px;
+  top: 50%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  overflow: hidden;
+  opacity: 0;
+  animation: arrive 500ms ease-in-out 0.9s forwards;
+  animation: NO 1s ease-in-out;
+  opacity: 1;
+}
+.register__form-input,
+.signIn__form-input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  border: 0;
+  outline: 0;
+  transition: 0.3s;
+
+  &:focus {
+    background: darken(#fff, 3%);
+  }
+}
+.register__form-btn,
+.signIn__form-btn {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  outline: 0;
+  border: 0;
+  color: white;
+  background: $primary-accent-color;
+  transition:0.3s;
+
+  @include font(normal, 16px, 400, 10px, normal);
+  text-transform: uppercase;
+
+  &:hover {
+    background: darken($primary-accent-color, 5%);
+  }
+}

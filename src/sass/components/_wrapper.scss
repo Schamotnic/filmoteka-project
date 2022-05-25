@@ -1,0 +1,19 @@
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper__dark {
+    background-color: $primary-text-color;
+
+    & .card__name {
+        color: $secondary-text-color;
+    }
+    & .tui-page-btn {
+        background-color: $primary-background-color;
+        border-radius: 5px;
+        transform: scale(0.97);
+    }
+}

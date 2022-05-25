@@ -1,0 +1,30 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Підключення змінних і глобальних стилів
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/reset';
+@import './utils/global-styles';
+@import './utils/hidden';
+
+// Підключення файлів стилів для перевикористовуваних елементів
+@import './components/wrapper';
+@import './components/container';
+@import './components/backdrop';
+
+
+// Підключення файлів стилів для основних компонентів сторінки
+@import './layout/header';
+@import './layout/modal-team';
+@import './layout/footer';
+@import './layout/authModal';
+@import './layout/filmlist';
+@import './layout/filmcard';
+@import './layout/pagination';
+@import './layout/section';// @import './layout/filmlibrary';hh //delete
+@import './layout/card-modal';
+@import './layout/trailer-btn';
+@import './layout/scroll-btn';

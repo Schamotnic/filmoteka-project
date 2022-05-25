@@ -1,0 +1,15 @@
+.film-list {
+    padding-left: 0;
+    list-style-type: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: -16px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin: -9px;
+    }
+}
